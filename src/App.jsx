@@ -5,6 +5,7 @@ import Features from './components/Features'
 import DataDemo from './components/DataDemo'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import BrandHero from './components/BrandHero'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <main className="relative">
         <Hero />
         <Features />
+        <BrandHero />
         <DataDemo />
         <CTA />
       </main>
