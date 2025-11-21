@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Menu, Search, Settings, User, ChevronDown } from 'lucide-react'
+import Logo from './Logo'
 
 export default function TopNav() {
   const [open, setOpen] = useState(false)
@@ -10,8 +11,8 @@ export default function TopNav() {
           <div className="flex items-center justify-between px-4 h-16">
             <div className="flex items-center gap-3">
               <button className="p-2 rounded-xl hover:bg-white/5 text-gray-300"><Menu size={18} /></button>
-              <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-300 shadow-[0_0_24px_rgba(59,130,246,0.6)]"></div>
-              <span className="text-sm font-semibold tracking-tight text-white">Apilos</span>
+              <Logo size={28} />
+              {/* No text per spec */}
             </div>
 
             <nav className="hidden md:flex items-center gap-6 text-sm text-gray-300">
